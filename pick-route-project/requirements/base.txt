@@ -1,6 +1,9 @@
 flask
 flask_restful
 Flask-SQLAlchemy
+flask_script
+ConfigParser
+pymysql
 
 
 

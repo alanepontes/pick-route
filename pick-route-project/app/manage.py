@@ -14,7 +14,6 @@ class InitDatabase(Command):
 		except Exception as e:
 			raise e
 
-
 	def run(self):
 		self.__init_db()
 
