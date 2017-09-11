@@ -1,0 +1,114 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pick-route",
+		"_postman_id": "3b5e5e7f-b624-a68a-d698-6e8eb907157e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/logistics-routes",
+			"request": {
+				"url": "localhost:5000/logistics-routes",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "SP\nA B 10\nB D 15\nA C 20\nC D 30\nB E 50\nD E 30"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/shortests-routes?name=SP&source=A&target=D&autonomy=10&price_per_litre=2.50",
+			"request": {
+				"url": {
+					"raw": "localhost:5000/shortests-routes?name=SP&source=A&target=D&autonomy=10&price_per_litre=2.50",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"shortests-routes"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "SP",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "source",
+							"value": "A",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "target",
+							"value": "D",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "autonomy",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "price_per_litre",
+							"value": "2.50",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/logistics-routes",
+			"request": {
+				"url": "localhost:5000/logistics-routes",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "SP\nA B 10\nB D 15\nA C 20\nC D 30\nB E 50\nD E 30"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/logistics-routes/SP",
+			"request": {
+				"url": "localhost:5000/logistics-routes/SP",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/logistics-routes/SP",
+			"request": {
+				"url": "localhost:5000/logistics-routes/SP",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
